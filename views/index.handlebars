@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="white-text">Minhas tarefas</h1>
+    <div class="todoContainer">
+        <div class="myTasks display-flex collumn">
+            {{#each tasks}}
+                {{>todoCard id=id title = title hour=time content= content}}
+            {{/each}}
+        </div>
+    </div>
+</div>

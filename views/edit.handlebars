@@ -1,0 +1,20 @@
+<br>
+<div class="container addTaskContainer">
+    <form class="display-flex collumn addTaskForm" action="/task/edit_form" method="post">
+        <input type="hidden" name="id" value="{{id}}">
+        <div>
+            <div class="display-flex collumn">
+                <label for="title"><h1>Title</h1></label>
+                <input type="text" name="title" id="title" value="{{title}}" required>
+            </div>
+            <br>
+            <div class="display-flex justify-content center align-items center">
+                <input type="datetime-local" name="time" id="time" required>hora
+            </div>
+        </div>
+        <textarea name="content" id="content" cols="90" rows="5">{{content}}</textarea>
+        <div class="display-flex justify-content center align-items center">
+            <button class="btn bg-yellow">Salvar</button>
+        </div>
+    </form>
+</div>

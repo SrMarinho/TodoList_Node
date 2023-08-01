@@ -1,0 +1,19 @@
+<div class="todoCard">
+    <div class="header display-flex justify-content spb align-items center">
+        <h2 class="title">{{ title }}</h2>
+        <b>{{ hour}}</b>
+    </div>
+    <hr>
+    <p class="content">{{ content }}</p>
+    <hr>
+    <div class="footer display-flex justify-content end align-items center">
+        <form action="/task/delete_form" method="post">
+            <input type="hidden" name="id" value="{{ id }}">
+            <button class="btn bg-red">Excluír</button>
+        </form>
+        <form action="/task/edit" method="get">
+            <input type="hidden" name="id" value="{{ id }}">
+            <button class="btn bg-yellow">Editar</button>
+        </form>
+    </div>
+</div>
